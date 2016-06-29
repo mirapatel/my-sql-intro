@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Home </title>
+		<meta name="description" content="Between 150 and 160 characters">
+		<link rel="stylesheet" href="css/styles.css">
+
+	</head>
+	<body>
+
+		<form>
+			<div>
+				<label for="full-name">Full Name:</label>
+				<input type="text" id="full-name">
+			</div>
+
+			<div>
+				<label for="country">Country:</label>
+				<select id="country">
+					<option value="">Please Select</option>
+					<option value="nz">New Zealand</option>
+					<option value="usa">United States of America</option>
+					<option value="aus">Australia</option>
+					<option value="eng">England</option>
+				</select>
+			</div>
+
+			<div>
+				<input type="radio" id="shippping-int" name="shipping">
+				<label for="shipping-int">International</label>
+			</div>
+			<div>
+				<input type="radio" id="shippping-ni" name="shipping">
+				<label for="shipping-ni">North Island</label>
+			</div>
+			<div>
+				<input type="radio" id="shippping-si" name="shipping">
+				<label for="shipping-si">South Island</label>
+			</div>
+
+			<div>
+				<label for="tac">Agree to the Terms and Conditions</label>
+				<input type="checkbox" id="tac">
+			</div>
+
+		</form>
+
+		<script src="js/shipping-form.js"></script>
+
+	</body>
+	
+</html>

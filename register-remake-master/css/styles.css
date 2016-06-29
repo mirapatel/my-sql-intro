@@ -1,0 +1,203 @@
+/*body {
+	background-color: #FF0000;
+}*/
+
+body {
+	font-family: Arial;
+	padding-left: 280px;
+}
+
+nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+nav li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #e5005f;
+	color: white;
+	padding: 5px 10px;
+	margin: 2px 0;
+	display: inline-block;
+	font-size: x-large;
+}
+
+nav li a:hover,
+#active {
+	background-color: #333333;
+}
+
+nav {
+	padding: 10px 0 0 10px;
+	width: 240px;
+	position: fixed; /*sticky navigation*/
+	left: 10px;
+}
+
+nav > a {
+	display: block;
+	text-decoration: none;
+	color: #333333;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+nav > a:hover {
+	color: #e5005f;
+}
+
+main aside p {
+	background-color: #eeeeee;
+	padding: 15px;
+}
+
+main {
+	width: 49%;
+	background-color: navy;
+	float: left;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #dddddd;
+}
+
+article img {
+	max-width: 100%
+}
+
+
+.related div {
+	width: 230px;
+	text-align: center;
+}
+
+.related:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.related div:nth-of-type(1) {
+	float:left;
+	margin-left: 50px;
+}
+
+.related div:nth-of-type(2) {
+	float:right;
+	margin-right: 50px;
+}
+
+.related img {
+	border-radius: 50%;
+}
+
+.related div a {
+	background-color: #e5005f;
+	display: block;
+	padding: 5px;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: -20px;
+	position: relative; /*tweak position*/
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#scroll-left,
+#scroll-right {
+	font-size: 42px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer; /* control + space for more options */
+	color: #e5005f;
+	position: absolute;
+	top: 50%;
+}
+
+#scroll-left {
+	left: 0;
+}
+
+#scroll-right {
+	right: 0;
+}
+.related {
+	position: relative; /*absolute needs a relative container*/
+}
+
+.related h1 {
+	background-color: white;
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+
+.related hr {
+	position: relative;
+	top: -20px;
+}
+
+#extra {
+	width: 49%;
+	float: right;
+}
+
+#social {
+	background-color: #e5005f;
+	color: white;
+	padding: 20px;
+	text-align: right;
+}
+
+#social a {
+	color: inherit; /*take colour from parent*/
+}
+
+#newsletter p {
+	text-align: right;
+	padding-right: 80px;
+	font-weight: bold;
+}
+
+#newsletter {
+	background-color: #dddddd;
+	padding: 20px 0;
+	background-image: url(../img/envelope2.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+
+#newsletter a {
+	color: white;
+	text-decoration: none;
+	background-color: #e5005f;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+#newsletter a:hover {
+	background-color: #333333;
+}
+
+#left {
+	width: 50%;
+	float: left;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+#right {
+	width: 50%;
+	float: right;
+	padding-left: 15px;
+	box-sizing: border-box;
+}
+
+

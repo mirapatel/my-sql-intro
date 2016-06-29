@@ -1,0 +1,60 @@
+p {
+	color: green;
+}
+
+#container {
+	position: relative;
+}
+
+img {
+	position: absolute;
+	/*Filefox*/
+	-moz-transition: opacity 1s ease-in-out;
+	/*Chrome*/
+	transition: opacity 1s ease-in-out;
+	left: 200px;
+}
+
+.transparent {
+	opacity: 0;
+}
+
+.toggle {
+	width: 80%;
+	margin: 10px auto;
+}
+
+.toggle h1 {
+	background-color: orange;
+	margin: 0 auto;
+	padding: 5px 20px;
+}
+
+.toggle p {
+	background-color: #333;
+	color: white;
+	margin: 0 auto;
+	padding: 20px;
+	display: none;
+}
+
+form input {
+	display: block;
+	margin: 0 auto;
+}
+
+form {
+	background-color: pink;
+	border-radius: 10px;
+	width: 200px;
+	padding: 20px;
+	position: relative;
+	display: none;
+}
+
+form p {
+	margin: 0;
+	width: 20px;
+	position: absolute;
+	right: 10px;
+}
