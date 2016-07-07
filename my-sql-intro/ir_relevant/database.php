@@ -1,4 +1,3 @@
-
 <?php
 
 $dbc = new mysqli('localhost', 'root','','mira_db');

@@ -1,14 +1,12 @@
 <?php
 
-abstract class View {
+abstract class View 
+{
+	protected $data = [];
 
-	protected $data = []; 
-
-	public function __construct($data) { //$data = []
+	public function __construct($data = []) {
 		$this->data = $data;
 	}
 
 	abstract public function render();
-
-
 }

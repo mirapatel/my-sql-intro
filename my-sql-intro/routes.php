@@ -5,9 +5,12 @@ require "Controllers/HomeController.php";
 require "Controllers/MoviesController.php";
 
 //ternary if operator to get page information
+
 $page = isset($_GET['page']) ? $_GET['page'] : "home";
+
 // switch to the page based on 'page' info in url, if not, 'home' will be loaded.
 // If a 'page' found, goes to default case.
+
 switch ($page) {
  	case 'home':
  		$controller = new HomeController;
@@ -17,19 +20,29 @@ switch ($page) {
  		$controller = new MoviesController;
  		$controller->show();
  		break;
- 		// include "templates/movieForm.php"
- 	case 'add':
- 		addMovie();
+  	case 'add':
+ 		$controller = new MoviesController;
+ 		$controller->add();
+ 		break;
+ 	case 'insert':
+ 		$controller = new MoviesController;
+ 		$controller->insert();
  		break;
  	case 'edit':
  		$controller = new MoviesController;
- 		$controller->editMovie();
+ 		$controller->edit();
+ 		break;
+ 	case 'update':
+ 		$controller = new MoviesController;
+ 		$controller->update();
  		break;
 	case 'delete':
 		$controller = new MoviesController;
-		$controller->delete();
-		break;
+ 		$controller->delete();
+ 		break;
  	default:
  		echo "Error 404! Page not found.";
  		break;
  } 
+
+
